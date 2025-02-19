@@ -14,205 +14,6 @@
             <h1 style="margin-bottom: 10px">Multiscale Visualization Design Space</h1>
             <p style="margin-top: 10px; margin-bottom: 30px;">Mara Solen, Matt Oddo, Tamara Munzner</p>
         </div>
-        <div id="filters" style="display: none; margin: auto;">
-            <div id="filter-scales" style="flex: 5; border-left: 0;">
-                <p>scales</p>
-                <div style="display: flex;">
-                    <div id="filter-scales-count" style="flex: 2;">
-                        <p>count</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item unselectable" id="filter-scales-count-total">
-                                <p>total</p>
-                                <div style="display: flex;">
-                                    <div style="flex: 1;">
-                                        <img src="images/icons/scales-count-total.png">
-                                    </div>
-                                    <div style="flex: 1;">
-                                        <p>min:</p>
-                                        <input type="number" id="scales-count-total-input" name="scales-count-total-input" min="2" max="63" value="2" style="width: 50px;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-item unselectable" id="filter-scales-count-simultaneous">
-                                <p>simultaneous</p>
-                                <div style="display: flex;">
-                                    <div style="flex: 1;">
-                                        <img src="images/icons/scales-count-simultaneous.png">
-                                    </div>
-                                    <div style="flex: 1;">
-                                        <p>min:</p>
-                                        <input type="number" id="scales-count-simultaneous-input" name="scales-count-simultaneous-input" min="1" max="10" value="1" style="width: 50px;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-item unselectable" id="filter-scales-count-separate">
-                                <p>separate</p>
-                                <div style="display: flex;">
-                                    <div style="flex: 1;">
-                                        <img src="images/icons/scales-count-separate.png">
-                                    </div>
-                                    <div style="flex: 1;">
-                                        <p>min:</p>
-                                        <input type="number" id="scales-count-separate-input" name="scales-count-separate-input" min="1" max="10" value="1" style="width: 50px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="filter-scales-stepsize" style="flex: 1;">
-                        <p>step size</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item selected" id="filter-scales-stepsize-constant">
-                                <p>constant</p>
-                                <img src="images/icons/scales-stepsize-constant.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-stepsize-datadriven">
-                                <p>data driven</p>
-                                <img src="images/icons/scales-stepsize-datadriven.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-stepsize-usercontinuous">
-                                <p>user continuous</p>
-                                <img src="images/icons/scales-stepsize-usercontinuous.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-stepsize-userdiscrete">
-                                <p>user discrete</p>
-                                <img src="images/icons/scales-stepsize-userdiscrete.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-stepsize-usermixed">
-                                <p>user mixed</p>
-                                <img src="images/icons/scales-stepsize-usermixed.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="filter-scales-encodings" style="flex: 1;">
-                        <p>encodings</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item selected" id="filter-scales-encodings-different">
-                                <p>different</p>
-                                <img src="images/icons/scales-encodings-different.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-encodings-same">
-                                <p>same</p>
-                                <img src="images/icons/scales-encodings-same.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="filter-scales-association" style="flex: 1;">
-                        <p>assocation</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item selected" id="filter-scales-association-none">
-                                <p>none</p>
-                                <img src="images/icons/scales-association-none.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-association-marks">
-                                <p>marks</p>
-                                <img src="images/icons/scales-association-marks.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-association-channels">
-                                <p>channels</p>
-                                <img src="images/icons/scales-association-channels.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-scales-association-both">
-                                <p>both</p>
-                                <img src="images/icons/scales-association-both.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="boundary"></div>
-            <div id="filter-navigation" style="flex: 3;">
-                <p>navigation</p>
-                <div style="display: flex;">
-                    <div id="filter-navigation-type" style="flex: 1;">
-                        <p>type</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item selected" id="filter-navigation-type-none">
-                                <p>none</p>
-                                <img src="images/icons/navigation-type-none.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-navigation-type-zoom">
-                                <p>zoom</p>
-                                <img src="images/icons/navigation-type-zoom.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-navigation-type-zoompan">
-                                <p>zoom/pan</p>
-                                <img src="images/icons/navigation-type-zoompan.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="filter-navigation-mode" style="flex: 1;">
-                        <p>mode</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item selected" id="filter-navigation-mode-physical">
-                                <p>physical</p>
-                                <img src="images/icons/navigation-mode-physical.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-navigation-mode-digital">
-                                <p>digital</p>
-                                <img src="images/icons/navigation-mode-digital.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="filter-navigation-visceraltime" style="flex: 1;">
-                        <p>visceral time</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item selected" id="filter-navigation-visceraltime-no">
-                                <p>no</p>
-                                <img src="images/icons/navigation-visceraltime-no.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-navigation-visceraltime-yes">
-                                <p>yes</p>
-                                <img src="images/icons/navigation-visceraltime-yes.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="boundary"></div>
-            <div id="filter-familiarity" style="flex: 1;">
-                <p>familiarity</p>
-                <div style="display: flex;">
-                    <div id="filter-familiarity-concrete" style="flex: 1;">
-                        <p>concrete</p>
-                        <div style="display: flex; flex-direction: column;">
-                            <div class="filter-item selected" id="filter-familiarity-concrete-no">
-                                <p>no</p>
-                                <img src="images/icons/familiarity-concrete-no.png">
-                            </div>
-                            <div class="filter-item selected" id="filter-familiarity-concrete-yes">
-                                <p>yes</p>
-                                <img src="images/icons/familiarity-concrete-yes.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="boundary"></div>
-            <div id="filter-strategies" style="flex: 3; border-right: 0;">
-                <p>strategies</p>
-                <div style="opacity: 0; user-select: none;">h</div>
-                <div style="display: flex; flex-direction: column;">
-                    <div class="filter-item selected" id="filter-strategies-singleviewpanandzoom">
-                        <p>single-view pan and zoom</p>
-                    </div>
-                    <div class="filter-item selected" id="filter-strategies-simultaneousoccludingembed">
-                        <p>simultaneous occluding embed</p>
-                    </div>
-                    <div class="filter-item selected" id="filter-strategies-simultaneousseparatemultilevel">
-                        <p>simultaneous separate multilevel</p>
-                    </div>
-                    <div class="filter-item selected" id="filter-strategies-familiarzoom">
-                        <p>familiar zoom</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
 
         <table id="corpus">
             <tr>
@@ -222,7 +23,7 @@
                 <td class="no-border">
                     <div class="filter-item-selectable selected">
                         <p>constant</p>
-                        <img src="images/icons/scales-stepsize-constant.png">
+                        <img src="images/icons/scales-stepsizetype-constant.png">
                     </div>
                 </td>
                 <td class="no-border">
@@ -246,7 +47,7 @@
                 <td class="no-border">
                     <div class="filter-item-selectable selected">
                         <p>data driven</p>
-                        <img src="images/icons/scales-stepsize-datadriven.png">
+                        <img src="images/icons/scales-stepsizetype-datadriven.png">
                     </div>
                 </td>
                 <td class="no-border">
@@ -281,7 +82,7 @@
                             </div>
                             <div style="flex: 1;">
                                 <p>min:</p>
-                                <input type="number" id="scales-count-total-input" name="scales-count-total-input" min="2" max="63" value="2" style="width: 50px;">
+                                <input type="number" id="scales-count-total-input" name="total" min="2" max="63" value="2" style="width: 50px;">
                             </div>
                         </div>
                     </div>
@@ -289,7 +90,7 @@
                 <td class="no-border">
                     <div class="filter-item-selectable selected">
                         <p>user continuous</p>
-                        <img src="images/icons/scales-stepsize-usercontinuous.png">
+                        <img src="images/icons/scales-stepsizetype-usercontinuous.png">
                     </div>
                 </td>
                 <td class="no-border">
@@ -328,7 +129,7 @@
                             </div>
                             <div style="flex: 1;">
                                 <p>min:</p>
-                                <input type="number" id="scales-count-simultaneous-input" name="scales-count-simultaneous-input" min="1" max="10" value="1" style="width: 50px;">
+                                <input type="number" id="scales-count-simultaneous-input" name="simultaneous" min="1" max="10" value="1" style="width: 50px;">
                             </div>
                         </div>
                     </div>
@@ -336,7 +137,7 @@
                 <td class="no-border">
                     <div class="filter-item-selectable selected">
                         <p>user discrete</p>
-                        <img src="images/icons/scales-stepsize-userdiscrete.png">
+                        <img src="images/icons/scales-stepsizetype-userdiscrete.png">
                     </div>
                 </td>
                 <td class="no-border">
@@ -391,7 +192,7 @@
                             </div>
                             <div style="flex: 1;">
                                 <p>min:</p>
-                                <input type="number" id="scales-count-separate-input" name="scales-count-separate-input" min="1" max="10" value="1" style="width: 50px;">
+                                <input type="number" id="scales-count-separate-input" name="separate" min="1" max="10" value="1" style="width: 50px;">
                             </div>
                         </div>
                     </div>
@@ -399,7 +200,7 @@
                 <td class="no-border">
                     <div class="filter-item-selectable selected">
                         <p>user mixed</p>
-                        <img src="images/icons/scales-stepsize-usermixed.png">
+                        <img src="images/icons/scales-stepsizetype-usermixed.png">
                     </div>
                 </td>
                 <td class="no-border">
@@ -445,7 +246,7 @@
                 </td>
             </tr>
             <tr>
-                <th rowspan="2">example</th>
+                <th rowspan="2" style="width: 300px;">example</th>
                 <th rowspan="2">image</th>
                 <th colspan="4">scales</th>
                 <th colspan="3">navigation</th>

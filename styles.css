@@ -8,7 +8,7 @@ body {
 
 #corpus {
     width: 100%;
-    min-width: 1200px;
+    min-width: 1500px;
 }
 
 table { 
@@ -28,11 +28,13 @@ tr {
 td, th {
     border-right: solid 2px black; 
     border-left: solid 2px black;
+    word-wrap: break-word;
 }
 
 td {
     vertical-align: middle;
     text-align: center;
+    border-bottom: solid 2px black;
 }
 
 table img {
@@ -64,57 +66,10 @@ table th div p {
     opacity: 0.5;
 }
 
+.filter-item-selectable:hover {
+    background-color: grey;
+}
+
 .selected {
-    opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
-#filters div div p {
-    font-size: 80%;
-}
-
-#filters div div div div p {
-    font-size: 70%;
-}
-
-#filters {
-    min-width: 1200px;
-    max-width: 1600px;
-}
-
-#filters div {
-    text-align: center;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-#filters div div {
-    border: none;
-}
-
-#filters p {
-    margin: 4px 0 0 0;
-}
-
-#filters img {
-    width: 40px;
-}
-
-.filter-item {
-    margin: 4px;
-    background-color: lightgrey;
-    border-radius: 10px;
-    opacity: 0.5;
-}
-
-.unselectable {
     opacity: 1;
 }
