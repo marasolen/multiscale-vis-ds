@@ -1,0 +1,182 @@
+[
+    {
+        "id": "scales",
+        "children": 
+        [
+            {
+                "id": "count",
+                "children":
+                [
+                    {
+                        "id": "total",
+                        "type": "quantitative"
+                    },
+                    {
+                        "id": "simultaneous",
+                        "type": "quantitative"
+                    },
+                    {
+                        "id": "separate",
+                        "type": "quantitative"
+                    }
+                ]
+            },
+            {
+                "id": "step_size",
+                "children":
+                [
+                    {
+                        "id": "constant",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "data_driven",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "user_continuous",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "user_discrete",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "user_mixed",
+                        "type": "categorical"
+                    }
+                ]
+            },
+            {
+                "id": "encodings",
+                "children":
+                [
+                    {
+                        "id": "different",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "same",
+                        "type": "categorical"
+                    }
+                ]
+            },
+            {
+                "id": "association",
+                "children":
+                [
+                    {
+                        "id": "none",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "marks",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "channels",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "both",
+                        "type": "categorical"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "navigation",
+        "children": 
+        [
+            {
+                "id": "type",
+                "children":
+                [
+                    {
+                        "id": "none",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "zoom",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "zoom/pan",
+                        "type": "categorical"
+                    }
+                ]
+            },
+            {
+                "id": "mode",
+                "children":
+                [
+                    {
+                        "id": "physical",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "digital",
+                        "type": "categorical"
+                    }
+                ]
+            },
+            {
+                "id": "visceral_time",
+                "children":
+                [
+                    {
+                        "id": "no",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "yes",
+                        "type": "categorical"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "familiarity",
+        "children": 
+        [
+            {
+                "id": "concrete",
+                "children":
+                [
+                    {
+                        "id": "no",
+                        "type": "categorical"
+                    },
+                    {
+                        "id": "yes",
+                        "type": "categorical"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "strategies",
+        "children":
+        [
+            {
+                "id": "single-view_pan_and_zoom",
+                "type": "categorical"
+            },
+            {
+                "id": "simultaneous_occluding_embed",
+                "type": "categorical"
+            },
+            {
+                "id": "simultaneous_separate_multilevel",
+                "type": "categorical"
+            },
+            {
+                "id": "familiar_zoom",
+                "type": "categorical"
+            }
+        ]
+    }
+]

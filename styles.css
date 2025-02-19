@@ -1,0 +1,120 @@
+body {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #0c100f;
+    background-color: #fcf6e8;
+}
+
+#corpus {
+    width: 100%;
+    min-width: 1200px;
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+th {
+    vertical-align: top;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+}
+
+tr { 
+    border: none; 
+}
+
+td, th {
+    border-right: solid 2px black; 
+    border-left: solid 2px black;
+}
+
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+table img {
+    width: 50px;
+}
+
+table p {
+    margin: 4px 0 0 0;
+}
+
+table th div p {
+    margin: 0;
+}
+
+.no-border {
+    border: none;
+}
+
+.filter-item-number {
+    margin: 6px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.filter-item-selectable {
+    margin: 6px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.selected {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+#filters div div p {
+    font-size: 80%;
+}
+
+#filters div div div div p {
+    font-size: 70%;
+}
+
+#filters {
+    min-width: 1200px;
+    max-width: 1600px;
+}
+
+#filters div {
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#filters div div {
+    border: none;
+}
+
+#filters p {
+    margin: 4px 0 0 0;
+}
+
+#filters img {
+    width: 40px;
+}
+
+.filter-item {
+    margin: 4px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.unselectable {
+    opacity: 1;
+}
