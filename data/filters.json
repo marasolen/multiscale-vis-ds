@@ -2,9 +2,9 @@
     "count": [2, 1, 1],
     "stepsizetype": ["constant", "data driven", "user continuous", "user discrete", "user mixed"],
     "encodings": ["different", "same"],
-    "association": ["none", "marks", "channels", "both"],
+    "association": ["none", "marks", "channels", "both", "n/a"],
     "type": ["none", "zoom", "zoom/pan"],
-    "mode": ["physical", "digital"],
+    "mode": ["physical", "digital", "n/a"],
     "visceraltime": ["no", "yes"],
     "concrete": ["no", "yes"],
     "strategy": ["single-view pan and zoom", "simultaneous occluding embed", "simultaneous separate multilevel", "familiar zoom"]

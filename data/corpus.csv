@@ -1,52 +1,52 @@
-name,count,stepsizetype,encodings,association,type,mode,visceraltime,concrete,strategy
-Zoom Line Chart,3:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Melange,2:02:01,user continuous,same,none,zoom/pan,digital,no,no,simultaneous occluding embed
-Multiscale Unfolding,6:06:06,user continuous,same,none,zoom/pan,digital,no,no,simultaneous separate multilevel
-Rivet (multitier strip chart),6:03:03,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous separate multilevel
-Temperature of Planet Earth,7:07:07,data driven,same,none,none,,,no,simultaneous separate multilevel
-TraXplorer (fig 2),5:05:05,user continuous,same,channels,zoom/pan,digital,no,no,simultaneous separate multilevel
-DeLVE,10:10:10,data driven,same,both,zoom,digital,no,yes,familiar zoom
-Here is Today,11:01:01,data driven,same,,zoom,digital,no,yes,familiar zoom
-Powers of Ten,40:01:01,constant,same,,zoom,digital,yes,yes,familiar zoom
-xkcd Money,5:05:05,constant,same,marks,none,digital,no,yes,familiar zoom
-Cuttlefish (fig 6),3:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-EVEVis,4:01:01,user mixed,different,,zoom/pan,digital,no,no,single-view pan and zoom
-Multilevel Visualization Scheme for Poetry,4:01:01,user discrete,different,,zoom/pan,digital,no,no,single-view pan and zoom
-Multiscale Navigation in Large Trace Data,5:01:01,user continuous,different,,zoom/pan,digital,no,no,single-view pan and zoom
-FingerGlass,2:02:01,user continuous,same,none,zoom/pan,digital,no,no,simultaneous occluding embed
-Mandelbrot Explorer,infinite:6:6,constant,same,none,zoom/pan,digital,no,no,simultaneous separate multilevel
-MizBee,3:03:03,user discrete,different,channels,zoom/pan,digital,no,no,simultaneous separate multilevel
-PolyZoom,4:03:03,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous separate multilevel
-Cell Size and Scale,9:01:01,user continuous,same,,zoom,digital,no,yes,familiar zoom
-Scale of the Universe 2,63:01:01,user continuous,same,,zoom,digital,no,yes,familiar zoom
-The Size of Space,35:01:01,data driven,same,,zoom,digital,no,yes,familiar zoom
-Universcale,42:01:01,user continuous,same,,zoom,digital,no,yes,familiar zoom
-US Debt Visualized in $100 Bills,9:03:03,data driven,same,none,zoom,digital,no,yes,familiar zoom
-Assessment and Visualization of OSM Consistency for European Cities,3:01:01,user continuous,different,,zoom/pan,digital,no,no,single-view pan and zoom
-Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques,3:01:01,user discrete,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Chameleon: Dynamic Color Mapping for Multi-Scale Structural Biology Models,5:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Hierarchical Route Maps for Efficient Navigation,3:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Hybrid-Image Visualization for Large Viewing Environments,3:01:01,user continuous,same,,zoom/pan,physical,no,no,single-view pan and zoom
-Kyrix-S: Authoring Scalable Scatterplot Visualizations of Big Data,15:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Membrane Mapping: Combining Mesoscopic and Molecular Cell Visualization,4:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Multiscale Visual Comparison of Execution Traces,2:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-MuSE: A Multiscale Editor,3:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-ScaleTrotter: Illustrative Visual Travels Across Negative Scales,7:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-SpaceFold and PhysicLenses: Simultaneous Multifocus Navigation on Touch Surfaces,2:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-TagNetLens: Multiscale Visualization of Knowledge Structures in Social Tag,2:01:01,user discrete,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Visual Comparison of Hierarchically Organized Data,2:01:01,user discrete,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Visualization and Level-of-Detail Control for Multi-Dimensional Bioactive Chemical Data,2:01:01,user continuous,different,,zoom/pan,digital,no,no,single-view pan and zoom
-Multi-level visualization for exploration of structures in missing data,2:01:01,user continuous,same,,zoom/pan,digital,no,no,single-view pan and zoom
-Designing Coherent Gesture Sets for Multi-scale Navigation on Tabletops,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,single-view pan and zoom
-Drilling into Complex 3D Models with Gimlenses,3:03:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-GrouseFlocks: Steerable Exploration of Graph Hierarchy Space,2:02:02,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-Interactive data styling and multifocal visualization for a multigridweb-based Digital Earth,3:03:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-Panda or not Panda? Understanding Adversarial Attacks with Interactive Visualization,2:02:01,user discrete,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-Pattern-Driven Navigation in 2D Multiscale Visualizations with Scalable Insets,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-Perspective Charts in a Multi-Foci Globe-Based Visualization of COVID-19 Data,2:02:01,user continuous,different,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-SpaceFold and PhysicLenses: Simultaneous Multifocus Navigation on Touch Surfaces,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-"TissUUmaps 3: Improvements in interactive visualization, exploration, and quality assessment of large-scale spatial omics data",2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-TrailMap: Facilitating Information Seeking in a Multi-Scale Digital Map via Implicit Bookmarking,2:02:01,user continuous,same,none,zoom/pan,digital,no,no,simultaneous occluding embed
-Chromoscope: interactive multiscale visualization for structural variation visualization for structural variation,3:02:02,user continuous,different,none,zoom/pan,digital,no,no,simultaneous separate multilevel
-TimeNotes: A Study on Effective Chart Visualization and Interaction Techniques for Time-Series Data,4:04:04,user continuous,same,both,zoom/pan,digital,no,no,simultaneous separate multilevel
-Ragas: integration and enhanced visualization for single cell subcluster analysis,2:02:02,data driven,same,both,none,,no,no,simultaneous separate multilevel
+name,url,image,count,stepsizetype,encodings,association,type,mode,visceraltime,concrete,strategy
+Zoom Line Chart,https://www.fusioncharts.com/dev/chart-guide/standard-charts/zoom-line-charts,,3:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Melange,https://dl.acm.org/doi/abs/10.1145/1357054.1357263,,2:02:01,user continuous,same,none,zoom/pan,digital,no,no,simultaneous occluding embed
+Multiscale Unfolding,https://inria.hal.science/hal-03163672/file/bare_jrnl_compsoc.pdf,,6:06:06,user continuous,same,none,zoom/pan,digital,no,no,simultaneous separate multilevel
+Rivet,https://www-graphics.stanford.edu/papers/rivet_cg/rivet.pdf,,6:03:03,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous separate multilevel
+Temp Earth,https://web.archive.org/web/20220123084348/https://www.thomasnet.com/insights/imt/2012/02/13/climate-change-nothing-new-how-has-earths-temperature-changed-in-the-past/,,7:07:07,data driven,same,none,none,n/a,no,no,simultaneous separate multilevel
+TraXplorer,https://ieeexplore.ieee.org/abstract/document/5429613,,5:05:05,user continuous,same,channels,zoom/pan,digital,no,no,simultaneous separate multilevel
+DeLVE,https://deeptime.cs.ubc.ca,,10:10:10,data driven,same,both,zoom,digital,no,yes,familiar zoom
+Here is Today,https://theuselessweb.site/hereistoday/,,11:01:01,data driven,same,n/a,zoom,digital,no,yes,familiar zoom
+Powers of Ten,https://www.youtube.com/watch?v=0fKBhvDjuy0&t,,40:01:01,constant,same,n/a,zoom,digital,yes,yes,familiar zoom
+xkcd Money,https://xkcd.com/980/huge/#x=-6432&y=-7872&z=3,,5:05:05,constant,same,marks,none,digital,no,yes,familiar zoom
+Cuttlefish,https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.13611,,3:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+EVEVis,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6094059,,4:01:01,user mixed,different,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Multilevel Poetry,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7557945,,4:01:01,user discrete,different,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Multiscale Trace,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6901019,,5:01:01,user continuous,different,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+FingerGlass,https://dl.acm.org/doi/pdf/10.1145/1978942.1979175,,2:02:01,user continuous,same,none,zoom/pan,digital,no,no,simultaneous occluding embed
+Mandelbrot Explorer,https://mandelbrot.page/,,infinite:6:6,constant,same,none,zoom/pan,digital,no,no,simultaneous separate multilevel
+MizBee,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5290692,,3:03:03,user discrete,different,channels,zoom/pan,digital,no,no,simultaneous separate multilevel
+PolyZoom,https://dl.acm.org/doi/pdf/10.1145/2207676.2207716,,4:03:03,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous separate multilevel
+Cell Size and Scale,https://learn.genetics.utah.edu/content/cells/scale/,,9:01:01,user continuous,same,n/a,zoom,digital,no,yes,familiar zoom
+Scale of the Universe 2,https://htwins.net/scale2/,,63:01:01,user continuous,same,n/a,zoom,digital,no,yes,familiar zoom
+The Size of Space,https://neal.fun/size-of-space/,,35:01:01,data driven,same,n/a,zoom,digital,no,yes,familiar zoom
+Universcale,https://www.nikon.com/company/corporate/sp/universcale/scale.html#,,42:01:01,user continuous,same,n/a,zoom,digital,no,yes,familiar zoom
+US Debt,https://demonocracy.info/infographics/usa/us_debt/us_debt.html,,9:03:03,data driven,same,none,zoom,digital,no,yes,familiar zoom
+Europe OSM,https://www.mdpi.com/2220-9964/10/6/361,,3:01:01,user continuous,different,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Zoomable Treemaps,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4376147,,3:01:01,user discrete,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Chameleon,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370176/,,5:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Hierarchical Route Maps,https://dl.acm.org/doi/pdf/10.1145/2557500.2557514,,3:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Large Viewing Vis,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6634173,,3:01:01,user continuous,same,n/a,zoom/pan,physical,no,no,single-view pan and zoom
+Kyrix-S,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9222038,,15:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Membrane Mapping,https://diglib.eg.org/handle/10.2312/vcbm.20141187.089-096,,4:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Execution Trace Vis,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6613833,,2:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+MuSE,https://dl.acm.org/doi/pdf/10.1145/288392.288579,,3:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+ScaleTrotter,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8805465,,7:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+SpaceFold,https://dl.acm.org/doi/pdf/10.1145/2598153.2598177,,2:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+TagNetLens,https://dl.acm.org/doi/pdf/10.1145/1865841.1865865,,2:01:01,user discrete,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Hierarchy Vis,https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1467-8659.2008.01205.x,,2:01:01,user discrete,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Chemical Vis,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4577919,,2:01:01,user continuous,different,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+MissVis,https://diglib.eg.org/server/api/core/bitstreams/ed855c80-a039-4bb9-97ba-9b22c4bb49d2/content,,2:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
+Tabletop Gestures,https://dl.acm.org/doi/pdf/10.1145/3173574.3173716,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,single-view pan and zoom
+Gimlenses,https://dl.acm.org/doi/pdf/10.1145/2503713.2503714,,3:03:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+GrouseFlocks,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4447668,,2:02:02,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+Digital Earth,https://www.tandfonline.com/doi/epdf/10.1080/17538947.2020.1822452?needAccess=true,,3:03:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+AdvEx,https://arxiv.org/pdf/2311.13656.pdf,,2:02:01,user discrete,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+Scalable Insets,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8809750,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+Multi-Foci COVID Vis,https://www.mdpi.com/2220-9964/11/4/223,,2:02:01,user continuous,different,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+PhysicsLenses,https://dl.acm.org/doi/pdf/10.1145/2598153.2598177,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+TissUUmaps,https://www.cell.com/action/showPdf?pii=S2405-8440%2823%2902513-6,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+TrailMap,https://dl.acm.org/doi/pdf/10.1145/2470654.2481417,,2:02:01,user continuous,same,none,zoom/pan,digital,no,no,simultaneous occluding embed
+Chromoscope,https://www.nature.com/articles/s41592-023-02056-x,,3:02:02,user continuous,different,none,zoom/pan,digital,no,no,simultaneous separate multilevel
+TimeNotes,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7192735,,4:04:04,user continuous,same,both,zoom/pan,digital,no,no,simultaneous separate multilevel
+Ragas,https://academic.oup.com/bioinformatics/article/40/6/btae366/7691991,,2:02:02,data driven,same,both,none,n/a,no,no,simultaneous separate multilevel

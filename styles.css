@@ -3,7 +3,12 @@ body {
     font-weight: 600;
     font-style: normal;
     color: #0c100f;
-    background-color: #fcf6e8;
+    background-color: #fbfcfa;
+}
+
+#intro {
+    width: 40%;
+    margin: auto;
 }
 
 #corpus {
@@ -37,10 +42,6 @@ td {
     border-bottom: solid 2px black;
 }
 
-table img {
-    width: 50px;
-}
-
 table p {
     margin: 4px 0 0 0;
 }
@@ -72,4 +73,32 @@ table th div p {
 
 .selected {
     opacity: 1;
+}
+
+.icon-image {
+    height: 50px;
+}
+
+.example-image {
+    margin: 10px;
+    max-height: 150px;
+    max-width: 200px;
+}
+
+@media screen and (max-width: 1680px) {
+    #intro {
+        width: 70%;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 1280px) {
+    #intro {
+        width: 90%;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 736px) {
+    #intro {
+        width: 95%;
+    }
 }

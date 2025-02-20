@@ -16,21 +16,26 @@ const fillTable = (corpus) => {
             cells.push(row.insertCell(-1));
         });
 
-        cells[0].innerHTML = example["name"];
+        cells[0].innerHTML = `<a href="${example["url"]}">${example["name"]}</a>`;
+        cells[1].innerHTML = `<img class="example-image" src="images/examples/${example["name"].toLowerCase().split(" ").join("")}.png">`;
         cells[2].innerHTML = example["count"].split(":").map(n => isNaN(Number(n)) ? n : Number(n)).join(" : ");
         ["step size type", "encodings", "association"].forEach((column, i) => {
-            if (example[column.split(" ").join("")].length > 0) {
-                cells[3 + i].innerHTML = `<p>${example[column]}</p><img src="images/icons/scales-${column.split(" ").join("")}-${example[column.split(" ").join("")].split(" ").join("")}.png">`
+            if (example[column.split(" ").join("")] !== "n/a") {
+                cells[3 + i].innerHTML = `<p>${example[column.split(" ").join("")]}</p><img class="icon-image" src="images/icons/scales-${column.split(" ").join("")}-${example[column.split(" ").join("")].split(" ").join("")}.png">`;
+            } else {
+                cells[3 + i].innerHTML = "n/a";
             }
         });
         ["type", "mode", "visceral time"].forEach((column, i) => {
-            if (example[column.split(" ").join("")].length > 0) {
-                cells[6 + i].innerHTML = `<p>${example[column]}</p><img src="images/icons/navigation-${column.split(" ").join("")}-${example[column.split(" ").join("")].split("/").join("")}.png">`
+            if (example[column.split(" ").join("")] !== "n/a") {
+                cells[6 + i].innerHTML = `<p>${example[column.split(" ").join("")]}</p><img class="icon-image" src="images/icons/navigation-${column.split(" ").join("")}-${example[column.split(" ").join("")].split("/").join("")}.png">`;
+            } else {
+                cells[6 + i].innerHTML = "n/a";
             }
         });
         
-        cells[9].innerHTML = `<p>${example["concrete"]}</p><img src="images/icons/familiarity-concrete-${example["concrete"]}.png">`
-        cells[10].innerHTML = example["strategy"].toLowerCase();
+        cells[9].innerHTML = `<p>${example["concrete"]}</p><img class="icon-image" src="images/icons/familiarity-concrete-${example["concrete"]}.png">`;
+        cells[10].innerHTML = `<p>${example["strategy"].toLowerCase()}</p><img class="icon-image" src="images/icons/${example["strategy"].toLowerCase().split(" ").join("")}.png">`
     });
 };
 
@@ -44,7 +49,7 @@ const filterCorpus = () => {
                 if (filters["count"][0] > counts[0] || filters["count"][1] > counts[1] || filters["count"][2] > counts[2]) {
                     passedFilter = false
                 }
-            } else if (example[filter.split(" ").join("")] !== "") {
+            } else {
                 if (!filters[filter].includes(example[filter.split(" ").join("")])) {
                     passedFilter = false;
                 }
@@ -60,6 +65,15 @@ const filterCorpus = () => {
 Promise.all([d3.csv('data/corpus.csv'), d3.json('data/filters.json')]).then(([_corpus, _filters]) => {
     console.log(_corpus);
     corpus = _corpus;
+    corpus.sort((a, b) => {
+        if (a["name"] < b["name"]) {
+            return -1;
+        }
+        if (a["name"] > b["name"]) {
+            return 1;
+        }
+        return 0;
+    });
     filters = _filters;
     fillTable(corpus);
 
@@ -68,10 +82,7 @@ Promise.all([d3.csv('data/corpus.csv'), d3.json('data/filters.json')]).then(([_c
     for (let i = 0; i < filterItems.length; i++) {
         const filterItem = filterItems[i];
         filterItem.onclick = () => {
-            let dimension = "strategy";
-            if (filterItem.childNodes.length > 3) {
-                dimension = filterItem.childNodes[3].src.split("-")[1];
-            }
+            let dimension = filterItem.getAttribute("dimension");
             
             if (filters[dimension].includes(filterItem.childNodes[1].innerText)) {
                 filters[dimension].splice(filters[dimension].indexOf(filterItem.childNodes[1].innerText), 1);

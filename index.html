@@ -10,9 +10,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body style="margin: 0; min-height: 100vh;">
-        <div style="text-align: center;">
+        <div id="intro" style="text-align: center;">
             <h1 style="margin-bottom: 10px">Multiscale Visualization Design Space</h1>
             <p style="margin-top: 10px; margin-bottom: 30px;">Mara Solen, Matt Oddo, Tamara Munzner</p>
+            <p>Designing multiscale visualizations, particularly when the ratio between the largest scale and the smallest item is large, can be challenging, and designers have developed many approaches to overcome this challenge. We present a design space for visualization with multiple scales. The design space includes three dimensions, with eight total subdimensions, additionally partitioned into four strategies, which are shared approaches with respect to design space dimension choices. </p>
+            <p>Interact with the filters above the table to specify which examples you're looking for! The entire corpus is shown by default.</p>
         </div>
 
         <table id="corpus">
@@ -21,14 +23,17 @@
                 <td class="no-border">
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="stepsizetype">
                         <p>constant</p>
-                        <img src="images/icons/scales-stepsizetype-constant.png">
+                        <img class="icon-image" src="images/icons/scales-stepsizetype-constant.png">
                     </div>
                 </td>
                 <td class="no-border">
                 </td>
                 <td class="no-border">
+                    <div class="filter-item-selectable selected" dimension="association">
+                        <p style="padding-top: 25px; padding-bottom: 25px;">n/a</p>
+                    </div>
                 </td>
                 <td class="no-border">
                 </td>
@@ -45,17 +50,17 @@
                 <td class="no-border">
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="stepsizetype">
                         <p>data driven</p>
-                        <img src="images/icons/scales-stepsizetype-datadriven.png">
+                        <img class="icon-image" src="images/icons/scales-stepsizetype-datadriven.png">
                     </div>
                 </td>
                 <td class="no-border">
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="association">
                         <p>none</p>
-                        <img src="images/icons/scales-association-none.png">
+                        <img class="icon-image" src="images/icons/scales-association-none.png">
                     </div>
                 </td>
                 <td class="no-border">
@@ -67,18 +72,19 @@
                 <td class="no-border">
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="strategy">
                         <p>single-view pan and zoom</p>
+                        <img class="icon-image" src="images/icons/single-viewpanandzoom.png">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td class="no-border">
-                    <div class="filter-item-number">
+                    <div class="filter-item-number" dimension="count">
                         <p>total</p>
                         <div style="display: flex;">
                             <div style="flex: 1;">
-                                <img src="images/icons/scales-count-total.png">
+                                <img class="icon-image" src="images/icons/scales-count-total.png">
                             </div>
                             <div style="flex: 1;">
                                 <p>min:</p>
@@ -88,23 +94,28 @@
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="stepsizetype">
                         <p>user continuous</p>
-                        <img src="images/icons/scales-stepsizetype-usercontinuous.png">
+                        <img class="icon-image" src="images/icons/scales-stepsizetype-usercontinuous.png">
                     </div>
                 </td>
                 <td class="no-border">
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="association">
                         <p>marks</p>
-                        <img src="images/icons/scales-association-marks.png">
+                        <img class="icon-image" src="images/icons/scales-association-marks.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="type">
                         <p>none</p>
-                        <img src="images/icons/navigation-type-none.png">
+                        <img class="icon-image" src="images/icons/navigation-type-none.png">
+                    </div>
+                </td>
+                <td class="no-border">
+                    <div class="filter-item-selectable selected" dimension="mode">
+                        <p style="padding-top: 25px; padding-bottom: 25px;">n/a</p>
                     </div>
                 </td>
                 <td class="no-border">
@@ -112,20 +123,19 @@
                 <td class="no-border">
                 </td>
                 <td class="no-border">
-                </td>
-                <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="strategy">
                         <p>simultaneous occluding embed</p>
+                        <img class="icon-image" src="images/icons/simultaneousoccludingembed.png">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td class="no-border">
-                    <div class="filter-item-number">
+                    <div class="filter-item-number" dimension="count">
                         <p>simultaneous</p>
                         <div style="display: flex;">
                             <div style="flex: 1;">
-                                <img src="images/icons/scales-count-simultaneous.png">
+                                <img class="icon-image" src="images/icons/scales-count-simultaneous.png">
                             </div>
                             <div style="flex: 1;">
                                 <p>min:</p>
@@ -135,60 +145,61 @@
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="stepsizetype">
                         <p>user discrete</p>
-                        <img src="images/icons/scales-stepsizetype-userdiscrete.png">
+                        <img class="icon-image" src="images/icons/scales-stepsizetype-userdiscrete.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="encodings">
                         <p>different</p>
-                        <img src="images/icons/scales-encodings-different.png">
+                        <img class="icon-image" src="images/icons/scales-encodings-different.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="association">
                         <p>channels</p>
-                        <img src="images/icons/scales-association-channels.png">
+                        <img class="icon-image" src="images/icons/scales-association-channels.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="type">
                         <p>zoom</p>
-                        <img src="images/icons/navigation-type-zoom.png">
+                        <img class="icon-image" src="images/icons/navigation-type-zoom.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="mode">
                         <p>physical</p>
-                        <img src="images/icons/navigation-mode-physical.png">
+                        <img class="icon-image" src="images/icons/navigation-mode-physical.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="visceraltime">
                         <p>no</p>
-                        <img src="images/icons/navigation-visceraltime-no.png">
+                        <img class="icon-image" src="images/icons/navigation-visceraltime-no.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="concrete">
                         <p>no</p>
-                        <img src="images/icons/familiarity-concrete-no.png">
+                        <img class="icon-image" src="images/icons/familiarity-concrete-no.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="strategy">
                         <p>simultaneous separate multilevel</p>
+                        <img class="icon-image" src="images/icons/simultaneousseparatemultilevel.png">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td class="no-border">
-                    <div class="filter-item-number">
+                    <div class="filter-item-number" dimension="count">
                         <p>separate</p>
                         <div style="display: flex;">
                             <div style="flex: 1;">
-                                <img src="images/icons/scales-count-separate.png">
+                                <img class="icon-image" src="images/icons/scales-count-separate.png">
                             </div>
                             <div style="flex: 1;">
                                 <p>min:</p>
@@ -198,56 +209,57 @@
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="stepsizetype">
                         <p>user mixed</p>
-                        <img src="images/icons/scales-stepsizetype-usermixed.png">
+                        <img class="icon-image" src="images/icons/scales-stepsizetype-usermixed.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="encodings">
                         <p>same</p>
-                        <img src="images/icons/scales-encodings-same.png">
+                        <img class="icon-image" src="images/icons/scales-encodings-same.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="association">
                         <p>both</p>
-                        <img src="images/icons/scales-association-both.png">
+                        <img class="icon-image" src="images/icons/scales-association-both.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="type">
                         <p>zoom/pan</p>
-                        <img src="images/icons/navigation-type-zoompan.png">
+                        <img class="icon-image" src="images/icons/navigation-type-zoompan.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="mode">
                         <p>digital</p>
-                        <img src="images/icons/navigation-mode-digital.png">
+                        <img class="icon-image" src="images/icons/navigation-mode-digital.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="visceraltime">
                         <p>yes</p>
-                        <img src="images/icons/navigation-visceraltime-yes.png">
+                        <img class="icon-image" src="images/icons/navigation-visceraltime-yes.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="concrete">
                         <p>yes</p>
-                        <img src="images/icons/familiarity-concrete-yes.png">
+                        <img class="icon-image" src="images/icons/familiarity-concrete-yes.png">
                     </div>
                 </td>
                 <td class="no-border">
-                    <div class="filter-item-selectable selected">
+                    <div class="filter-item-selectable selected" dimension="strategy">
                         <p>familiar zoom</p>
+                        <img class="icon-image" src="images/icons/familiarzoom.png">
                     </div>
                 </td>
             </tr>
             <tr>
                 <th rowspan="2" style="width: 300px;">example</th>
-                <th rowspan="2">image</th>
+                <th rowspan="2" style="width: 250px;">image</th>
                 <th colspan="4">scales</th>
                 <th colspan="3">navigation</th>
                 <th>familiarity</th>
