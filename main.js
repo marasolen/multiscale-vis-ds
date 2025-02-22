@@ -1,13 +1,16 @@
 let corpus;
+let originalFilters;
 let filters;
 
-const fillTable = (corpus) => {
+const fillTable = (_corpus) => {
     const table = document.getElementById("corpus");
     while (table.rows.length > 7) {
         table.deleteRow(-1);
     }
 
-    corpus.forEach(example => {
+    document.getElementById("cardinality-cell").innerHTML = `<p>included: ${_corpus.length}</p><p>filtered out: ${corpus.length - _corpus.length}</p>`;
+
+    _corpus.forEach(example => {
         const row = table.insertRow(-1);
         row.classList.add("corpus-row");
 
@@ -74,29 +77,44 @@ Promise.all([d3.csv('data/corpus.csv'), d3.json('data/filters.json')]).then(([_c
         }
         return 0;
     });
+    originalFilters = JSON.parse(JSON.stringify(_filters));
     filters = _filters;
     fillTable(corpus);
 
     const filterItems = document.getElementsByClassName("filter-item-selectable");
+
+    const filterInputs = document.getElementsByClassName("filter-item-number");
     
     for (let i = 0; i < filterItems.length; i++) {
         const filterItem = filterItems[i];
         filterItem.onclick = () => {
-            let dimension = filterItem.getAttribute("dimension");
-            
-            if (filters[dimension].includes(filterItem.childNodes[1].innerText)) {
-                filters[dimension].splice(filters[dimension].indexOf(filterItem.childNodes[1].innerText), 1);
-                filterItem.classList.remove("selected");
-            } else {
-                filters[dimension].push(filterItem.childNodes[1].innerText);
-                filterItem.classList.add("selected");
-            }
+            if (filterItem.getAttribute("dimension") === null) {
+                filters = JSON.parse(JSON.stringify(originalFilters));
+                
+                for (let j = 0; j < filterItems.length; j++) {
+                    filterItems[j].classList.add("selected");
+                }
 
-            filterCorpus();
+                for (let j = 0; j < filterInputs.length; j++) {
+                    filterInputs[j].childNodes[3].childNodes[3].childNodes[3].value = j === 0 ? 2 : 1;
+                }
+
+                filterCorpus();
+            } else {
+                let dimension = filterItem.getAttribute("dimension");
+                
+                if (filters[dimension].includes(filterItem.childNodes[1].innerText)) {
+                    filters[dimension].splice(filters[dimension].indexOf(filterItem.childNodes[1].innerText), 1);
+                    filterItem.classList.remove("selected");
+                } else {
+                    filters[dimension].push(filterItem.childNodes[1].innerText);
+                    filterItem.classList.add("selected");
+                }
+    
+                filterCorpus();
+            }
         }
     }
-
-    const filterInputs = document.getElementsByClassName("filter-item-number");
     
     for (let i = 0; i < filterInputs.length; i++) {
         const filterInput = filterInputs[i].childNodes[3].childNodes[3].childNodes[3];

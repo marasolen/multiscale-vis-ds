@@ -13,13 +13,13 @@
         <div id="intro" style="text-align: center;">
             <h1 style="margin-bottom: 10px">Multiscale Visualization Design Space</h1>
             <p style="margin-top: 10px; margin-bottom: 30px;">Mara Solen, Matt Oddo, Tamara Munzner</p>
-            <p>Designing multiscale visualizations, particularly when the ratio between the largest scale and the smallest item is large, can be challenging, and designers have developed many approaches to overcome this challenge. We present a design space for visualization with multiple scales. The design space includes three dimensions, with eight total subdimensions, additionally partitioned into four strategies, which are shared approaches with respect to design space dimension choices. </p>
-            <p>Interact with the filters above the table to specify which examples you're looking for! The entire corpus is shown by default.</p>
+            <p>Designing multiscale visualizations, particularly when the ratio between the largest scale and the smallest item is large, can be challenging, and designers have developed many approaches to overcome this challenge. We present a design space for visualization with multiple scales. The design space includes three dimensions, with eight total subdimensions, additionally partitioned into four strategies, which are shared approaches with respect to design space dimension choices.</p>
+            <p>Interact with the filters above the table to specify which examples you're looking for! The entire corpus is shown by default. Download the full dataset in Excel format at <a href="https://osf.io/wbrdm/">osf.io/wbrdm</a>.</p>
         </div>
 
         <table id="corpus">
             <tr>
-                <td rowspan="5" colspan="2" class="no-border"></td>
+                <td rowspan="3" colspan="2" class="no-border"></td>
                 <td class="no-border">
                 </td>
                 <td class="no-border">
@@ -32,7 +32,7 @@
                 </td>
                 <td class="no-border">
                     <div class="filter-item-selectable selected" dimension="association">
-                        <p style="padding-top: 25px; padding-bottom: 25px;">n/a</p>
+                        <p style="padding-top: 20px; padding-bottom: 20px;">n/a</p>
                     </div>
                 </td>
                 <td class="no-border">
@@ -115,7 +115,7 @@
                 </td>
                 <td class="no-border">
                     <div class="filter-item-selectable selected" dimension="mode">
-                        <p style="padding-top: 25px; padding-bottom: 25px;">n/a</p>
+                        <p style="padding-top: 20px; padding-bottom: 20px;">n/a</p>
                     </div>
                 </td>
                 <td class="no-border">
@@ -130,6 +130,9 @@
                 </td>
             </tr>
             <tr>
+                <td class="no-border" id="cardinality-cell">
+                </td>
+                <td rowspan="2" class="no-border"></td>
                 <td class="no-border">
                     <div class="filter-item-number" dimension="count">
                         <p>simultaneous</p>
@@ -194,6 +197,11 @@
                 </td>
             </tr>
             <tr>
+                <td class="no-border">
+                    <div class="filter-item-selectable selected" id="reset-filters-button" style="padding-top: 20px; padding-bottom: 20px;">
+                        <p>reset filters</p>
+                    </div>
+                </td>
                 <td class="no-border">
                     <div class="filter-item-number" dimension="count">
                         <p>separate</p>
