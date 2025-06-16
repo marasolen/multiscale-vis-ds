@@ -39,7 +39,7 @@ Chemical Vis,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4577919,,2
 MissVis,https://diglib.eg.org/server/api/core/bitstreams/ed855c80-a039-4bb9-97ba-9b22c4bb49d2/content,,2:01:01,user continuous,same,n/a,zoom/pan,digital,no,no,single-view pan and zoom
 Tabletop Gestures,https://dl.acm.org/doi/pdf/10.1145/3173574.3173716,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,single-view pan and zoom
 Gimlenses,https://dl.acm.org/doi/pdf/10.1145/2503713.2503714,,3:03:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
-GrouseFlocks,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4447668,,2:02:02,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
+GrouseFlocks,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4447668,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
 Digital Earth,https://www.tandfonline.com/doi/epdf/10.1080/17538947.2020.1822452?needAccess=true,,3:03:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
 AdvEx,https://arxiv.org/pdf/2311.13656.pdf,,2:02:01,user discrete,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
 Scalable Insets,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8809750,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
@@ -47,6 +47,7 @@ Multi-Foci COVID Vis,https://www.mdpi.com/2220-9964/11/4/223,,2:02:01,user conti
 PhysicsLenses,https://dl.acm.org/doi/pdf/10.1145/2598153.2598177,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
 TissUUmaps,https://www.cell.com/action/showPdf?pii=S2405-8440%2823%2902513-6,,2:02:01,user continuous,same,marks,zoom/pan,digital,no,no,simultaneous occluding embed
 TrailMap,https://dl.acm.org/doi/pdf/10.1145/2470654.2481417,,2:02:01,user continuous,same,none,zoom/pan,digital,no,no,simultaneous occluding embed
+Tangible Views,https://dl.acm.org/doi/pdf/10.1145/1936652.1936684,,2:02:01,user continuous,same,none,zoom/pan,physical,no,no,simultaneous occluding embed
 Chromoscope,https://www.nature.com/articles/s41592-023-02056-x,,3:02:02,user continuous,different,none,zoom/pan,digital,no,no,simultaneous separate multilevel
 TimeNotes,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7192735,,4:04:04,user continuous,same,both,zoom/pan,digital,no,no,simultaneous separate multilevel
 Ragas,https://academic.oup.com/bioinformatics/article/40/6/btae366/7691991,,2:02:02,data driven,same,both,none,n/a,no,no,simultaneous separate multilevel
